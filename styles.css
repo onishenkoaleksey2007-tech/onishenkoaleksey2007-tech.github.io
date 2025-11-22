@@ -1,0 +1,133 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+body {
+  background: #f3f2ef;
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.45;
+  padding: 28px;
+  display: flex;
+  justify-content: center;
+}
+.page {
+  width: min(980px, 95%);
+  background: linear-gradient(#fbfaf8, #f3f2ef);
+  border: 1px solid #d6d2c8;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  padding: 28px;
+  position: relative;
+}
+.dossier-header {
+  border-bottom: 2px dashed #cfc7bb;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.dossier-header .seal {
+  position: absolute;
+  top: -10px;
+  right: -4px;
+  background: #d32f2f;
+  color: white;
+  padding: 6px 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transform: rotate(-10deg);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+
+.dossier-header h1 {
+  font-size: 1.35rem;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.dossier-header .name {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.dossier-body section {
+  margin: 16px 0;
+  padding: 12px 10px;
+  background: rgba(255,255,255,0.45);
+  border-left: 4px solid #cfc7bb;
+}
+
+.dossier-body h2 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #222;
+  text-decoration: underline dotted #cfc7bb;
+}
+
+ul, ol {
+  margin-top: 8px;
+  padding-left: 28px;
+}
+.mood-images .images {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.mood-images figure {
+  width: 220px;
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #e0dcd3;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.mood-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.dossier-footer {
+  margin-top: 20px;
+  border-top: 1px dashed #d6d2c8;
+  padding-top: 12px;
+  font-size: 0.9rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.dossier-footer a {
+  color: #d32f2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dossier-footer a:hover {
+  text-decoration: underline;
+}
+.small {
+  font-size: 0.75rem;
+  color: #666;
+}
+@media (max-width: 600px) {
+  .mood-images figure { width: 140px; }
+  .meta { font-size: 0.85rem; }
+}
